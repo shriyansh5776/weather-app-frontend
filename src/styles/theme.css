@@ -1,46 +1,40 @@
-:root {
-  /* ===========================
+@theme {
+  /* ==========================================
      COLORS
-  =========================== */
+  ========================================== */
 
-  /* Background */
-  --canvas: #0a0b0d;
+  --color-canvas: #0a0b0d;
 
-  /* Surfaces */
-  --surface-1: #101216;
-  --surface-2: #15181d;
-  --surface-3: #1c2026;
+  --color-surface-1: #101216;
+  --color-surface-2: #15181d;
+  --color-surface-3: #1c2026;
 
-  /* Borders */
-  --border-subtle: #1f242b;
-  --border-strong: #2a3038;
+  --color-border-subtle: #1f242b;
+  --color-border-strong: #2a3038;
 
-  /* Text */
-  --text-primary: #f2f4f7;
-  --text-secondary: #a8b0bb;
-  --text-tertiary: #6b7280;
+  --color-text-primary: #f2f4f7;
+  --color-text-secondary: #a8b0bb;
+  --color-text-tertiary: #6b7280;
 
-  /* Accent */
-  --accent-cyan: #22d3ee;
-  --accent-cyan-soft: #0e7490;
-  --accent-blue: #3b82f6;
+  --color-accent-cyan: #22d3ee;
+  --color-accent-cyan-soft: #0e7490;
+  --color-accent-blue: #3b82f6;
 
-  /* Status */
-  --success: #10b981;
-  --warning: #f59e0b;
-  --danger: #ef4444;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
 
-  /* ===========================
+  /* ==========================================
      TYPOGRAPHY
-  =========================== */
+  ========================================== */
 
   --font-display: "Inter", sans-serif;
   --font-body: "Inter", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 
-  /* ===========================
-     BORDER RADIUS
-  =========================== */
+  /* ==========================================
+     RADIUS
+  ========================================== */
 
   --radius-sm: 8px;
   --radius-md: 10px;
@@ -48,35 +42,25 @@
   --radius-xl: 20px;
   --radius-full: 9999px;
 
-  /* ===========================
+  /* ==========================================
      SHADOWS
-  =========================== */
+  ========================================== */
 
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.35);
-  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.45);
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.2);
+  --shadow-md: 0 4px 12px rgb(0 0 0 / 0.35);
+  --shadow-lg: 0 8px 30px rgb(0 0 0 / 0.45);
 
-  /* ===========================
+  /* ==========================================
      BLUR
-  =========================== */
+  ========================================== */
 
   --blur-sm: 8px;
   --blur-md: 20px;
   --blur-lg: 24px;
 
-  /* ===========================
-     GRADIENTS
-  =========================== */
-
-  --gradient-primary: linear-gradient(
-    135deg,
-    var(--accent-cyan),
-    var(--accent-blue)
-  );
-
-  /* ===========================
+  /* ==========================================
      SPACING
-  =========================== */
+  ========================================== */
 
   --space-1: 4px;
   --space-2: 8px;
@@ -88,35 +72,35 @@
   --space-8: 64px;
   --space-9: 96px;
 
-  /* ===========================
+  /* ==========================================
      LAYOUT
-  =========================== */
+  ========================================== */
 
-  --navbar-height: 56px;
-  --sidebar-width: 64px;
-  --content-max-width: 1600px;
+  --layout-navbar-height: 56px;
+  --layout-sidebar-width: 64px;
+  --layout-content-max-width: 1600px;
 
-  /* ===========================
-     TRANSITIONS
-  =========================== */
+  /* ==========================================
+     MOTION
+  ========================================== */
 
-  --transition-fast: 120ms;
-  --transition-normal: 220ms;
-  --transition-slow: 420ms;
+  --duration-fast: 120ms;
+  --duration-normal: 220ms;
+  --duration-slow: 420ms;
 
   --ease-standard: cubic-bezier(0.22, 1, 0.36, 1);
   --ease-emphasis: cubic-bezier(0.4, 0, 0.2, 1);
 
-  /* ===========================
+  /* ==========================================
      OPACITY
-  =========================== */
+  ========================================== */
 
   --opacity-hover: 0.85;
   --opacity-disabled: 0.3;
 
-  /* ===========================
-     Z-INDEX
-  =========================== */
+  /* ==========================================
+     Z INDEX
+  ========================================== */
 
   --z-sidebar: 90;
   --z-navbar: 100;
