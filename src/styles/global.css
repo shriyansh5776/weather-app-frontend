@@ -1,0 +1,179 @@
+/* ==========================================
+   Imports
+========================================== */
+
+@import "tailwindcss";
+@import "./theme.css";
+
+/* ==========================================
+   CSS Reset
+========================================== */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==========================================
+   Root
+========================================== */
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+
+  background: var(--canvas);
+  color: var(--text-primary);
+
+  font-family: var(--font-body);
+  line-height: 1.5;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================
+   Typography
+========================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+p {
+  color: var(--text-secondary);
+}
+
+/* ==========================================
+   Links
+========================================== */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ==========================================
+   Lists
+========================================== */
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* ==========================================
+   Images
+========================================== */
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* ==========================================
+   Buttons
+========================================== */
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+/* ==========================================
+   Inputs
+========================================== */
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+/* ==========================================
+   Selection
+========================================== */
+
+::selection {
+  background: var(--accent-cyan);
+  color: var(--canvas);
+}
+
+/* ==========================================
+   Scrollbar
+========================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface-1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-cyan);
+}
+
+/* ==========================================
+   Utility Classes
+========================================== */
+
+.container {
+  width: min(100%, var(--content-max-width));
+  margin-inline: auto;
+}
+
+.text-gradient {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass {
+  background: rgba(16, 18, 22, 0.8);
+  backdrop-filter: blur(var(--blur-lg));
+  -webkit-backdrop-filter: blur(var(--blur-lg));
+  border: 1px solid var(--border-subtle);
+}
+
+.hidden {
+  display: none !important;
+}
